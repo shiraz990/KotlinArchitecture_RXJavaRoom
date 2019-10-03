@@ -1,4 +1,4 @@
-package com.sevenpeakssoftware.muhammadshiraz
+package com.application.muhammadshiraz
 
 import org.junit.Test
 

@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="net.gahfy.mvvmposts">
+    package="com.application.muhammadshiraz">
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.post.PostListActivity">
+            android:name="com.application.muhammadshiraz.ui.article.CarListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

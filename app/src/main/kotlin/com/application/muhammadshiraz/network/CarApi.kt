@@ -1,6 +1,6 @@
-package com.sevenpeakssoftware.muhammadshiraz.network
+package com.application.muhammadshiraz.network
 
-import com.sevenpeakssoftware.muhammadshiraz.model.ArticlesResponse
+import com.application.muhammadshiraz.model.ArticlesResponse
 import io.reactivex.Observable
 import retrofit2.http.GET
 

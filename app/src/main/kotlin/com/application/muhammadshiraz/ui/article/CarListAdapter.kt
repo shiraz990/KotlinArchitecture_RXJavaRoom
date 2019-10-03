@@ -1,12 +1,12 @@
-package com.sevenpeakssoftware.muhammadshiraz.ui.article
+package com.application.muhammadshiraz.ui.article
 
 import android.databinding.DataBindingUtil
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import com.sevenpeakssoftware.muhammadshiraz.R
-import com.sevenpeakssoftware.muhammadshiraz.databinding.ItemCarBinding
-import com.sevenpeakssoftware.muhammadshiraz.model.Car
+import com.application.muhammadshiraz.R
+import com.application.muhammadshiraz.databinding.ItemCarBinding
+import com.application.muhammadshiraz.model.Car
 
 class CarListAdapter: RecyclerView.Adapter<CarListAdapter.ViewHolder>() {
     private lateinit var carList:List<Car>

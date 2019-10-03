@@ -1,4 +1,4 @@
-package com.sevenpeakssoftware.muhammadshiraz.model
+package com.application.muhammadshiraz.model
 
 import android.arch.persistence.room.Dao
 import android.arch.persistence.room.Insert

@@ -1,4 +1,4 @@
-package com.sevenpeakssoftware.muhammadshiraz.utils
+package com.application.muhammadshiraz.utils
 
 import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.Observer
@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
-import com.sevenpeakssoftware.muhammadshiraz.utils.extension.getParentActivity
+import com.application.muhammadshiraz.utils.extension.getParentActivity
 import com.squareup.picasso.Picasso
 
 @BindingAdapter("adapter")

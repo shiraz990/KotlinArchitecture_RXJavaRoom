@@ -1,4 +1,4 @@
-package com.sevenpeakssoftware.muhammadshiraz.ui.article
+package com.application.muhammadshiraz.ui.article
 
 import android.annotation.SuppressLint
 import android.arch.lifecycle.MutableLiveData
@@ -7,12 +7,11 @@ import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
-import com.sevenpeakssoftware.muhammadshiraz.R
-import com.sevenpeakssoftware.muhammadshiraz.base.BaseViewModel
-import com.sevenpeakssoftware.muhammadshiraz.model.ArticlesResponse
-import com.sevenpeakssoftware.muhammadshiraz.model.Car
-import com.sevenpeakssoftware.muhammadshiraz.model.CarDao
-import com.sevenpeakssoftware.muhammadshiraz.network.CarApi
+import com.application.muhammadshiraz.R
+import com.application.muhammadshiraz.base.BaseViewModel
+import com.application.muhammadshiraz.model.Car
+import com.application.muhammadshiraz.model.CarDao
+import com.application.muhammadshiraz.network.CarApi
 import javax.inject.Inject
 import java.text.SimpleDateFormat
 

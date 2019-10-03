@@ -1,4 +1,4 @@
-package com.sevenpeakssoftware.muhammadshiraz.ui.article
+package com.application.muhammadshiraz.ui.article
 
 import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
@@ -8,9 +8,9 @@ import android.support.annotation.StringRes
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
-import com.sevenpeakssoftware.muhammadshiraz.R
-import com.sevenpeakssoftware.muhammadshiraz.databinding.ActivityCarListBinding
-import com.sevenpeakssoftware.muhammadshiraz.injection.ViewModelFactory
+import com.application.muhammadshiraz.R
+import com.application.muhammadshiraz.databinding.ActivityCarListBinding
+import com.application.muhammadshiraz.injection.ViewModelFactory
 
 class CarListActivity: AppCompatActivity() {
     private lateinit var binding: ActivityCarListBinding

@@ -1,4 +1,4 @@
-package com.sevenpeakssoftware.muhammadshiraz.utils.extension
+package com.application.muhammadshiraz.utils.extension
 
 import android.content.ContextWrapper
 import android.support.v7.app.AppCompatActivity

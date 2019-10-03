@@ -1,11 +1,11 @@
-package com.sevenpeakssoftware.muhammadshiraz.injection.module
+package com.application.muhammadshiraz.injection.module
 
 import dagger.Module
 import dagger.Provides
 import dagger.Reusable
 import io.reactivex.schedulers.Schedulers
-import com.sevenpeakssoftware.muhammadshiraz.network.CarApi
-import com.sevenpeakssoftware.muhammadshiraz.utils.BASE_URL
+import com.application.muhammadshiraz.network.CarApi
+import com.application.muhammadshiraz.utils.BASE_URL
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.moshi.MoshiConverterFactory

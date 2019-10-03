@@ -4,11 +4,12 @@
     <data>
         <variable
             name="viewModel"
-            type="com.sevenpeakssoftware.muhammadshiraz.ui.Car.CarListViewModel" />
+            type="com.application.muhammadshiraz.ui.article.CarListViewModel" />
     </data>
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@android:color/background_dark">
 
         <ProgressBar
             android:layout_width="wrap_content"
@@ -20,7 +21,7 @@
             app:layout_constraintEnd_toEndOf="parent" />
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/Car_list"
+            android:id="@+id/car_list"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:adapter="@{viewModel.getCarListAdapter()}"

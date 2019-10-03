@@ -1,8 +1,8 @@
-package com.sevenpeakssoftware.muhammadshiraz.ui.article
+package com.application.muhammadshiraz.ui.article
 
 import android.arch.lifecycle.MutableLiveData
-import com.sevenpeakssoftware.muhammadshiraz.base.BaseViewModel
-import com.sevenpeakssoftware.muhammadshiraz.model.Car
+import com.application.muhammadshiraz.base.BaseViewModel
+import com.application.muhammadshiraz.model.Car
 
 class CarViewModel: BaseViewModel() {
     private val carImage = MutableLiveData<String>()

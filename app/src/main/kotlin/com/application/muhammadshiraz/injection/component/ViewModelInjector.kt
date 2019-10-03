@@ -1,9 +1,9 @@
-package com.sevenpeakssoftware.muhammadshiraz.injection.component
+package com.application.muhammadshiraz.injection.component
 
 import dagger.Component
-import com.sevenpeakssoftware.muhammadshiraz.injection.module.NetworkModule
-import com.sevenpeakssoftware.muhammadshiraz.ui.article.CarListViewModel
-import com.sevenpeakssoftware.muhammadshiraz.ui.article.CarViewModel
+import com.application.muhammadshiraz.injection.module.NetworkModule
+import com.application.muhammadshiraz.ui.article.CarListViewModel
+import com.application.muhammadshiraz.ui.article.CarViewModel
 import javax.inject.Singleton
 
 /**

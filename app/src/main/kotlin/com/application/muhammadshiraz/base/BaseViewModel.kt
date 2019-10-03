@@ -1,11 +1,11 @@
-package com.sevenpeakssoftware.muhammadshiraz.base
+package com.application.muhammadshiraz.base
 
 import android.arch.lifecycle.ViewModel
-import com.sevenpeakssoftware.muhammadshiraz.injection.component.DaggerViewModelInjector
-import com.sevenpeakssoftware.muhammadshiraz.injection.component.ViewModelInjector
-import com.sevenpeakssoftware.muhammadshiraz.injection.module.NetworkModule
-import com.sevenpeakssoftware.muhammadshiraz.ui.article.CarListViewModel
-import com.sevenpeakssoftware.muhammadshiraz.ui.article.CarViewModel
+import com.application.muhammadshiraz.injection.component.DaggerViewModelInjector
+import com.application.muhammadshiraz.injection.component.ViewModelInjector
+import com.application.muhammadshiraz.injection.module.NetworkModule
+import com.application.muhammadshiraz.ui.article.CarListViewModel
+import com.application.muhammadshiraz.ui.article.CarViewModel
 
 abstract class BaseViewModel:ViewModel(){
     private val injector: ViewModelInjector = DaggerViewModelInjector
