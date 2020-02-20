@@ -38,11 +38,12 @@ fun setMutableImage(view: ImageView,  text: MutableLiveData<String>?) {
     val parentActivity:AppCompatActivity? = view.getParentActivity()
     if(parentActivity != null && text != null) {
         text.observe(parentActivity, Observer { value ->
+            if(!value.isNullOrEmpty()){
             Picasso.with(view.context)
 
                  .load(value)
 
-                    .fit().centerCrop().into(view)
+                    .fit().centerCrop().into(view)}
         })
     }
 }

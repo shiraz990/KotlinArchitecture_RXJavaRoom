@@ -4,8 +4,8 @@ import android.arch.lifecycle.ViewModel
 import com.application.muhammadshiraz.injection.component.DaggerViewModelInjector
 import com.application.muhammadshiraz.injection.component.ViewModelInjector
 import com.application.muhammadshiraz.injection.module.NetworkModule
-import com.application.muhammadshiraz.ui.article.CarListViewModel
-import com.application.muhammadshiraz.ui.article.CarViewModel
+import com.application.muhammadshiraz.ui.article.ArticleViewModel
+import com.application.muhammadshiraz.ui.article.ArticlesListViewModel
 
 abstract class BaseViewModel:ViewModel(){
     private val injector: ViewModelInjector = DaggerViewModelInjector
@@ -22,8 +22,8 @@ abstract class BaseViewModel:ViewModel(){
      */
     private fun inject() {
         when (this) {
-            is CarListViewModel -> injector.inject(this)
-            is CarViewModel -> injector.inject(this)
+            is ArticlesListViewModel -> injector.inject(this)
+            is ArticleViewModel -> injector.inject(this)
         }
     }
 }

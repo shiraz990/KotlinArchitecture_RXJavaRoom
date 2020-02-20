@@ -4,8 +4,8 @@ import dagger.Module
 import dagger.Provides
 import dagger.Reusable
 import io.reactivex.schedulers.Schedulers
-import com.application.muhammadshiraz.network.CarApi
-import com.application.muhammadshiraz.utils.BASE_URL
+import com.application.muhammadshiraz.network.NYTimesApi
+import com.application.muhammadshiraz.utils.BASE_URL_NYTIME
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.moshi.MoshiConverterFactory
@@ -18,15 +18,15 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 @Suppress("unused")
 object NetworkModule {
     /**
-     * Provides the Car service implementation.
+     * Provides the NYTimes service implementation.
      * @param retrofit the Retrofit object used to instantiate the service
-     * @return the Car service implementation.
+     * @return the NYTimes service implementation.
      */
     @Provides
     @Reusable
     @JvmStatic
-    internal fun provideCarApi(retrofit: Retrofit): CarApi {
-        return retrofit.create(CarApi::class.java)
+    internal fun provideNYTimesApi(retrofit: Retrofit): NYTimesApi {
+        return retrofit.create(NYTimesApi::class.java)
     }
 
     /**
@@ -38,7 +38,7 @@ object NetworkModule {
     @JvmStatic
     internal fun provideRetrofitInterface(): Retrofit {
         return Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl(BASE_URL_NYTIME)
                 .addConverterFactory(MoshiConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.createWithScheduler(Schedulers.io()))
                 .build()

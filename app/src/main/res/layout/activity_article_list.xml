@@ -4,7 +4,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.application.muhammadshiraz.ui.article.CarListViewModel" />
+            type="com.application.muhammadshiraz.ui.article.ArticlesListViewModel" />
     </data>
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
@@ -21,10 +21,10 @@
             app:layout_constraintEnd_toEndOf="parent" />
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/car_list"
+            android:id="@+id/article_list"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:adapter="@{viewModel.getCarListAdapter()}"
+            app:adapter="@{viewModel.getArticleListAdapter()}"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"

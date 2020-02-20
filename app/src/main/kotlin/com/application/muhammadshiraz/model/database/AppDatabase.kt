@@ -2,10 +2,10 @@ package com.application.muhammadshiraz.model.database
 
 import android.arch.persistence.room.Database
 import android.arch.persistence.room.RoomDatabase
-import com.application.muhammadshiraz.model.Car
-import com.application.muhammadshiraz.model.CarDao
+import com.application.muhammadshiraz.model.Article
+import com.application.muhammadshiraz.model.ArticleDao
 
-@Database(entities = [Car::class], version = 1)
+@Database(entities = [Article::class], version = 1)
 abstract class AppDatabase : RoomDatabase() {
-    abstract fun CarDao(): CarDao
+    abstract fun ArticleDao(): ArticleDao
 }

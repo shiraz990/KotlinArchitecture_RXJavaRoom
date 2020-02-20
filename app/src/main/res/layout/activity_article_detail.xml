@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
     <data>
         <variable
             name="viewModel"
-            type="com.application.muhammadshiraz.ui.article.CarViewModel" />
+            type="com.application.muhammadshiraz.ui.article.ArticleDetailViewModel" />
     </data>
-
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
+        android:layout_height="match_parent"
+        android:background="@android:color/background_dark">
 
 
         <android.support.constraint.ConstraintLayout
@@ -24,13 +23,13 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:id="@+id/car_image"
+                android:id="@+id/article_image"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:mutableImage="@{viewModel.getCarImage()}" />
+                app:mutableImage="@{viewModel.getArticleImage()}" />
             <View
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -39,7 +38,7 @@
 
 
             <TextView
-                android:id="@+id/car_title"
+                android:id="@+id/article_title"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:maxLines="2"
@@ -50,10 +49,10 @@
                 android:fontFamily="@font/roboto_medium"
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
-                app:layout_constraintBottom_toBottomOf="@+id/car_image"
+                app:layout_constraintBottom_toBottomOf="@+id/article_image"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:mutableText="@{viewModel.getCarTitle()}" />
+                app:mutableText="@{viewModel.getArticleTitle()}" />
 
         </android.support.constraint.ConstraintLayout>
 
@@ -68,37 +67,36 @@
             app:layout_constraintTop_toBottomOf="@+id/rl_top">
 
             <TextView
-                android:id="@+id/car_date"
+                android:id="@+id/article_date"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:textColor="@color/text_grey"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/text_grey"
                 android:textSize="14sp"
-                app:layout_constraintBottom_toTopOf="@+id/car_desc"
+                app:layout_constraintBottom_toTopOf="@+id/article_desc"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_chainStyle="packed"
-                app:mutableText="@{viewModel.getCarDate()}" />
+                app:mutableText="@{viewModel.getArticleDate()}" />
 
 
             <TextView
-                android:id="@+id/car_desc"
+                android:id="@+id/article_desc"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:maxLines="3"
-                android:layout_marginTop="15dp"
+                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="15dp"
-                android:textSize="14sp"
+                android:textSize="15sp"
                 android:fontFamily="@font/roboto_regular"
                 android:textColor="@android:color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/car_date"
-                app:mutableText="@{viewModel.getCarDescription()}" />
-        </android.support.constraint.ConstraintLayout>
+                app:layout_constraintTop_toBottomOf="@+id/article_date"
+                app:mutableText="@{viewModel.getArticleDescription()}" />
 
-    </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
+     </android.support.constraint.ConstraintLayout>
 </layout>
